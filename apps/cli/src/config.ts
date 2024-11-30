@@ -60,3 +60,8 @@ export function readExchangesConfig(
 
   return config;
 }
+
+/**
+ * Default language setting
+ */
+export const defaultLanguage = "pt";

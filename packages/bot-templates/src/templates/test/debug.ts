@@ -43,5 +43,9 @@ debug.schema = z.object({
   fetchSymbols: z.boolean().optional(),
 });
 debug.requiredHistory = 15;
+debug.runPolicy = {
+  onCandleClosed: true,
+};
+debug.timeframe = ({ timeframe }: IBotConfiguration) => timeframe;
 
 export type DebugStrategyConfig = IBotConfiguration<z.infer<typeof debug.schema>>;

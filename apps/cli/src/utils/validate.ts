@@ -46,3 +46,15 @@ export function validateExchange(exchangeCodeParam?: string | null): string {
     `Invalid exchange: ${exchangeCode}. Valid values are: ${validExchanges.join(", ")}`,
   );
 }
+
+export function validateLanguage(language?: string | null): string {
+  const validLanguages = ["pt", "en"];
+
+  if (validLanguages.includes(language as string)) {
+    return language as string;
+  }
+
+  throw new Error(
+    `Invalid language: ${language}. Valid values are: ${validLanguages.join(", ")}`,
+  );
+}

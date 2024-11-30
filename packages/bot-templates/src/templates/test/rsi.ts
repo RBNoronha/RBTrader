@@ -30,3 +30,7 @@ testRsi.displayName = "Test RSI";
 testRsi.hidden = true;
 testRsi.requiredHistory = 15;
 testRsi.schema = z.object({});
+testRsi.runPolicy = {
+  onCandleClosed: true,
+};
+testRsi.timeframe = ({ timeframe }: IBotConfiguration) => timeframe;

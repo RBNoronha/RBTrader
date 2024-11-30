@@ -72,6 +72,9 @@ gridBot.schema = z.object({
 });
 gridBot.runPolicy = {
   onOrderFilled: true,
+  onCandleClosed: true,
 };
+gridBot.requiredHistory = 15;
+gridBot.timeframe = ({ timeframe }: IBotConfiguration) => timeframe;
 
 export type GridBotConfig = IBotConfiguration<z.infer<typeof gridBot.schema>>;

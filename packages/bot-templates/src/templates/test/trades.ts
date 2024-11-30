@@ -13,3 +13,8 @@ testTrades.schema = z.object({});
 testTrades.watchers = {
   watchTrades: ["BTC/USDT", "ETH/USDT"],
 };
+testTrades.runPolicy = {
+  onPublicTrade: true,
+};
+testTrades.requiredHistory = 0;
+testTrades.timeframe = null;

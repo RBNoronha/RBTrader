@@ -29,3 +29,8 @@ export function* testCandle(ctx: TBotContext<any>) {
 
 testCandle.schema = z.object({});
 testCandle.hidden = true;
+testCandle.runPolicy = {
+  onCandleClosed: true,
+};
+testCandle.requiredHistory = 15;
+testCandle.timeframe = ({ timeframe }: IBotConfiguration) => timeframe;

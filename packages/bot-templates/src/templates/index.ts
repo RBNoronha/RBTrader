@@ -4,3 +4,5 @@ export * from "./grid.js";
 export * from "./rsi.js";
 export * from "./test/index.js";
 export * from "./macd.js";
+export * from "./bollinger-bands.js";
+export * from "./moving-average-crossover.js";

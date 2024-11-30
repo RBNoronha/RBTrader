@@ -33,6 +33,7 @@ import { addDownCommand } from "./commands/down.js";
 import { addStatusCommand } from "./commands/status.js";
 import { dbCommands } from "./commands/db.js";
 import { addLogsCommand } from "./commands/logs.js";
+import { defaultLanguage } from "./config.js";
 
 const program = new Command();
 
@@ -55,3 +56,5 @@ dbCommands(program);
 addLogsCommand(program);
 
 program.parse();
+
+console.log(`Default language is set to: ${defaultLanguage}`);

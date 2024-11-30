@@ -1,7 +1,7 @@
 {
-  "name": "opentrader",
+  "name": "rbtrader",
   "version": "1.0.0-beta.25",
-  "description": "OpenTrader is a powerful open-source crypto trading bot designated to automate your trading strategies on various cryptocurrency exchanges.",
+  "description": "RB Trader Bot is a powerful open-source crypto trading bot designated to automate your trading strategies on various cryptocurrency exchanges.",
   "keywords": [
     "bot",
     "crypto",
@@ -23,16 +23,16 @@
   "bin": {
     "opentrader": "./bin/opentrader.mjs"
   },
-  "author": "bludnic",
+  "author": "RBNoronha",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bludnic/opentrader.git"
+    "url": "git+https://github.com/RBNoronha/RBTrader.git"
   },
   "bugs": {
-    "url": "https://github.com/bludnic/opentrader/issues"
+    "url": "https://github.com/RBNoronha/RBTrader/issues"
   },
-  "homepage": "https://github.com/bludnic/opentrader#readme",
+  "homepage": "https://github.com/RBNoronha/RBTrader#readme",
   "devDependencies": {
     "@opentrader/eslint": "workspace:*",
     "@opentrader/tsconfig": "workspace:*",

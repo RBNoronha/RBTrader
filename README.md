@@ -1,17 +1,17 @@
 <p align="center">
-  <a href="https://github.com/bludnic/opentrader" title="OpenTrader">
-    <img src=".github/images/logo.png" alt="OpenTrader logo" width="128" />
+  <a href="https://github.com/RBNoronha/RBTrader" title="RB Trader Bot">
+    <img src=".github/images/logo.png" alt="RB Trader Bot logo" width="128" />
   </a>
 </p>
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/bludnic/opentrader/dev.yml)](https://github.com/bludnic/opentrader/actions)
-[![NPM Version](https://img.shields.io/npm/v/opentrader?color=blue)](https://www.npmjs.com/package/opentrader)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/bludnic/opentrader)](https://github.com/bludnic/opentrader/graphs/contributors)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/RBNoronha/RBTrader/dev.yml)](https://github.com/RBNoronha/RBTrader/actions)
+[![NPM Version](https://img.shields.io/npm/v/rbtrader?color=blue)](https://www.npmjs.com/package/rbtrader)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/RBNoronha/RBTrader)](https://github.com/RBNoronha/RBTrader/graphs/contributors)
 [![Static Badge](https://img.shields.io/badge/Discord-white?logo=Discord)](https://discord.gg/RS7y3ffvvG)
-[![Static Badge](https://img.shields.io/badge/Reddit-white?logo=Reddit)](https://www.reddit.com/r/OpenTrader)
+[![Static Badge](https://img.shields.io/badge/Reddit-white?logo=Reddit)](https://www.reddit.com/r/RBTrader)
 [![Static Badge](https://img.shields.io/badge/Telegram-white?logo=Telegram)](https://t.me/+cJLNxLSjcW83Njgy)
 
-[OpenTrader](https://github.com/bludnic/opentrader) is an advanced cryptocurrency trading bot offering high-frequency, cross-exchange arbitrage and event-based strategies, including technical analysis with indicators. Features a user-friendly management UI, robust backtesting capabilities, and support for 100+ exchanges via CCXT.
+[RB Trader Bot](https://github.com/RBNoronha/RBTrader) is an advanced cryptocurrency trading bot offering high-frequency, cross-exchange arbitrage and event-based strategies, including technical analysis with indicators. Features a user-friendly management UI, robust backtesting capabilities, and support for 100+ exchanges via CCXT.
 
 **Features:**
 
@@ -39,31 +39,31 @@ Currently, the NPM version includes the full bot functionality, including the UI
 
 # Quick start
 
-Get started with OpenTrader in just a few steps. Follow this quick guide to install, configure, and run your crypto trading bot.
+Get started with RB Trader Bot in just a few steps. Follow this quick guide to install, configure, and run your crypto trading bot.
 
 ## Installation
 
-1. Install OpenTrader globally using npm:
+1. Install RB Trader Bot globally using npm:
 
 ```bash
-npm install -g opentrader
+npm install -g rbtrader
 ```
 
-2. Set an admin password for later accessing the OpenTrader UI:
+2. Set an admin password for later accessing the RB Trader Bot UI:
 
 ```bash
-opentrader set-password <password>
+rbtrader set-password <password>
 ```
 
-3. Start the OpenTrader app
+3. Start the RB Trader Bot app
 
 ```bash
-opentrader up
+rbtrader up
 ```
 
 The app will start the RPC server and listen on port 8000.
 
-> **Tip**: Use `opentrader up -d` to start the app as a daemon. To stop it, run `opentrader down`.
+> **Tip**: Use `rbtrader up -d` to start the app as a daemon. To stop it, run `rbtrader down`.
 
 # Usage
 
@@ -73,7 +73,7 @@ The user interface allows managing multiple bots and strategies, viewing backtes
 
 ![UI Preview](.github/images/ui.png)
 
-You can access the OpenTrader UI on: http://localhost:8000
+You can access the RB Trader Bot UI on: http://localhost:8000
 
 ## CLI
 
@@ -105,27 +105,27 @@ Create the strategy configuration file `config.json5`. We will use the `grid` st
 
 ### Run a backtest
 
-Command: `opentrader backtest <strategy> --from <date> --to <date> -t <timeframe>`
+Command: `rbtrader backtest <strategy> --from <date> --to <date> -t <timeframe>`
 
 Example running a `grid` strategy on `1h` timeframe.
 
 ```bash
-opentrader backtest grid --from 2024-03-01 --to 2024-06-01 -t 1h
+rbtrader backtest grid --from 2024-03-01 --to 2024-06-01 -t 1h
 ```
 
-> To get more accurate results, use a smaller timeframe, e.g. 1m, however, it will take more time to download OHLC data from the exchange.
+> Para obter resultados mais precisos, use um período menor, por exemplo, 1 mês. No entanto, levará mais tempo para baixar os dados OHLC da bolsa.
 
 ### Running a Live Trading
 
-Command: `opentrader trade <strategy>`
+Command: `rbtrader trade <strategy>`
 
 Example running a live trading with `grid` strategy.
 
 ```bash
-opentrader trade grid
+rbtrader trade grid
 ```
 
-> To stop the live trading, run `opentrader stop`
+> To stop the live trading, run `rbtrader stop`
 
 # Project structure
 
@@ -143,7 +143,7 @@ This software is for educational purposes only. USE THE SOFTWARE AT YOUR OWN RIS
 
 # Donate
 
-If you find OpenTrader useful and would like to support its development, consider making a donation. Your contributions will help cover the costs of maintaining and improving this project.
+If you find RB Trader Bot useful and would like to support its development, consider making a donation. Your contributions will help cover the costs of maintaining and improving this project.
 
 **Donate via:**
 

@@ -5,3 +5,6 @@ export * from "./stop-command.js";
 export * from "./up/index.js";
 export * from "./down.js";
 export * from "./logs.js";
+
+// Add a default language setting to "pt"
+export const defaultLanguage = "pt";

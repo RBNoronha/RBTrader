@@ -6,3 +6,7 @@ export * from "./test/index.js";
 export * from "./macd.js";
 export * from "./bollinger-bands.js";
 export * from "./moving-average-crossover.js";
+export * from "./ichimoku-cloud.js";
+export * from "./stop-loss-take-profit.js";
+export * from "./position-sizing.js";
+export * from "./diversification.js";
